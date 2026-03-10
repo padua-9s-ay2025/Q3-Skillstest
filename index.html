@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 Skills Test</title>
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container p-3 mb-3 rounded">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="text-center">Member Sign Up</h1>
+                <h3 class>Student Details</h3>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <h3>Ticket Selection (250 Pesos Each)</h3>
+
+                <label for="ticketQuantity">Ticket QTY:</label>
+                <input type="number" id="ticketQuantity" name="ticketQuantity" min="0">
+
+                <h1 class="text-center">Total Fees</h1>
+
+                <label for="subtotal">Subtotal:</label>
+                <input type="text" id="subtotal" name="subtotal" readonly><br>
+
+                <label for="adminfee" id="adminfee">Admin Fee:</label>
+                <input type="number" id="ADMIN_FEE" name="adminfee" value="50" readonly><br>
+                
+
+                <label for="totalPrice" id="totalPrice">Total Price:</label>
+                <input type="text" id="totalPrice" name="totalPrice" readonly><br><br>
+
+                <center>
+                <button type="button" class="btn btn-primary" onclick="checkFees()">Register</button>
+                <button type="button" class="btn btn-warning" onclick="window.location.reload()">Refresh</button>
+                </center><br> 
+
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
